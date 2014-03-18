@@ -1,0 +1,22 @@
+EESchema-DOCLIB  Version 2.0  Date: Wed 09 Oct 2013 09:45:40 AM CEST
+#
+$CMP DSP96002
+D DSP 32 bits Motorola
+K DSP
+$ENDCMP
+#
+$CMP MOS_P
+F transistors/mos/*.*
+$ENDCMP
+#
+$CMP MOS_Po
+F transistors/mos/*.*
+$ENDCMP
+#
+$CMP TMS320LF2406PZ
+D DSP Texas 16 Bits pour controle moteurs
+K DSP
+F texas/tms320lf240x/tms320*.*
+$ENDCMP
+#
+#End Doc Library

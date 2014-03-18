@@ -1,0 +1,104 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 27/09/2013 14:12:30
+#Cmp ( order = Reference )
+| 12V1       Adapter     
+| BackLight  MOS_BL      
+| D_REL1     DIODESCH    
+| D_REL2     DIODESCH    
+| DCDC1      7805        
+| DSC_D1     DISCOVERY DESNA
+| DSC_L1     DISCOVERY LEVA
+| OUT_HOR1   Horizontalna letvica
+| OUT_VER1   Vertikalna letvica
+| R_B1       R           
+| R_B2       R           
+| R_BE1      R           
+| R_E1       R           
+| R_E2       R           
+| R_GREEN1   R           
+| R_GREEN2   R           
+| R_GREEN3   R           
+| R_GREEN4   R           
+| R_GREEN5   R           
+| R_GREEN6   R           
+| R_GREEN7   R           
+| R_GREEN8   R           
+| R_RED1     R           
+| R_RED2     R           
+| R_RED3     R           
+| R_RED4     R           
+| R_RED5     R           
+| R_RED6     R           
+| R_RED7     R           
+| R_RED8     R           
+| R_T1a1     R           
+| R_T1b1     R           
+| R_T2a1     R           
+| R_T2b1     R           
+| R_T3a1     R           
+| R_T3b1     R           
+| R_T4a1     R           
+| R_T4b1     R           
+| R_T5a1     R           
+| R_T5b1     R           
+| R_T6a1     R           
+| R_T6b1     R           
+| R_T7a1     R           
+| R_T7b1     R           
+| R_T8a1     R           
+| R_T8b1     R           
+| REL1       MOSFET_N    
+| REL2       MOSFET_N    
+#End Cmp
+
+#Cmp ( order = Value )
+| R            R_T4a1    
+| R            R_RED4    
+| R            R_RED5    
+| R            R_RED6    
+| R            R_RED7    
+| R            R_RED8    
+| R            R_T1a1    
+| R            R_T1b1    
+| R            R_T2a1    
+| R            R_T2b1    
+| R            R_T3a1    
+| R            R_T3b1    
+| R            R_RED3    
+| R            R_T4b1    
+| R            R_T5a1    
+| R            R_T5b1    
+| R            R_T6a1    
+| R            R_T6b1    
+| R            R_T7a1    
+| R            R_T7b1    
+| R            R_T8a1    
+| R            R_T8b1    
+| MOSFET_N     REL1      
+| MOSFET_N     REL2      
+| R            R_E1      
+| MOS_BL       BackLight 
+| DIODESCH     D_REL1    
+| DIODESCH     D_REL2    
+| 7805         DCDC1     
+| DISCOVERY DESNA DSC_D1    
+| DISCOVERY LEVA DSC_L1    
+| Horizontalna letvica OUT_HOR1  
+| Vertikalna letvica OUT_VER1  
+| R            R_B1      
+| R            R_B2      
+| R            R_BE1     
+| Adapter      12V1      
+| R            R_E2      
+| R            R_GREEN1  
+| R            R_GREEN2  
+| R            R_GREEN3  
+| R            R_GREEN4  
+| R            R_GREEN5  
+| R            R_GREEN6  
+| R            R_GREEN7  
+| R            R_GREEN8  
+| R            R_RED1    
+| R            R_RED2    
+#End Cmp
+
+#End List

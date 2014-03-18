@@ -1,0 +1,12 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 64 48 -65 -61
+PIN -64 -32 LEFT 8
+PINATTR PinName Vcc
+PINATTR SpiceOrder 1
+PIN 64 -32 RIGHT 8
+PINATTR PinName U(T)
+PINATTR SpiceOrder 2
+PIN 0 48 BOTTOM 8
+PINATTR PinName GND
+PINATTR SpiceOrder 3

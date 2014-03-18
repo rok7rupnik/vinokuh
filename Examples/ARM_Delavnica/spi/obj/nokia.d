@@ -1,0 +1,14 @@
+.\obj\nokia.o: nokia.c
+.\obj\nokia.o: nokia.h
+.\obj\nokia.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\nokia.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\nokia.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\nokia.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\nokia.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\nokia.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\nokia.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\nokia.o: .\inc\stm32f4xx_conf.h
+.\obj\nokia.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\nokia.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\nokia.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\obj\nokia.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h

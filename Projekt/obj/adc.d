@@ -1,0 +1,14 @@
+.\obj\adc.o: adc.c
+.\obj\adc.o: adc.h
+.\obj\adc.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\adc.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\adc.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\adc.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\adc.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\adc.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\adc.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\adc.o: .\inc\stm32f4xx_conf.h
+.\obj\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\adc.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h

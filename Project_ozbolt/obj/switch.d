@@ -1,0 +1,14 @@
+.\obj\switch.o: switch.c
+.\obj\switch.o: switch.h
+.\obj\switch.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\switch.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\switch.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\switch.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\switch.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\switch.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\switch.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\switch.o: .\inc\stm32f4xx_conf.h
+.\obj\switch.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\switch.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\switch.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\switch.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h

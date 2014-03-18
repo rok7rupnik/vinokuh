@@ -1,0 +1,91 @@
+Dependencies for Project 'vinokuh', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f40xx.s)(0x51C803DE)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx--list .\startup_stm32f40xx.lst --xref -o .\obj\startup_stm32f40xx.o --depend .\obj\startup_stm32f40xx.d)
+F (.\inc\stm32f4xx_conf.h)(0x51FFB198)()
+F (.\inc\system_stm32f4xx.c)(0x51FCFC39)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\system_stm32f4xx.o --omf_browse .\obj\system_stm32f4xx.crf --depend .\obj\system_stm32f4xx.d)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+F (.\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c)(0x51FCFC35)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\stm32f4xx_adc.o --omf_browse .\obj\stm32f4xx_adc.crf --depend .\obj\stm32f4xx_adc.d)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+F (.\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c)(0x51FCFC36)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\stm32f4xx_gpio.o --omf_browse .\obj\stm32f4xx_gpio.crf --depend .\obj\stm32f4xx_gpio.d)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+F (.\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x51FCFC36)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\stm32f4xx_rcc.o --omf_browse .\obj\stm32f4xx_rcc.crf --depend .\obj\stm32f4xx_rcc.d)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+F (.\main.c)(0x520601A5)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\gpio.h)(0x5205ED71)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\adc.h)(0x5205F2C2)
+F (.\gpio.c)(0x5205FFE8)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\gpio.o --omf_browse .\obj\gpio.crf --depend .\obj\gpio.d)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\gpio.h)(0x5205ED71)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)
+F (.\adc.c)(0x520A7938)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\STM32F4xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F4xx-DSTM32F40XX-o .\obj\adc.o --omf_browse .\obj\adc.crf --depend .\obj\adc.d)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\adc.h)(0x5205F2C2)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h)(0x51C80448)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4.h)(0x51C809AA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C809AA)
+I (C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h)(0x51C809AA)
+I (C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h)(0x51C80448)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\inc\stm32f4xx_conf.h)(0x51FFB198)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x51FFC5C4)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x51FCFC37)
+I (C:\Users\Ozbolt_2\Dropbox\Vinokuh\Projekt\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x51FCFC37)

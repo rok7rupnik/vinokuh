@@ -1,0 +1,13 @@
+--cpu Cortex-M4.fp
+".\obj\startup_stm32f40xx.o"
+".\obj\system_stm32f4xx.o"
+".\obj\stm32f4xx_adc.o"
+".\obj\stm32f4xx_gpio.o"
+".\obj\stm32f4xx_rcc.o"
+".\obj\main.o"
+".\obj\gpio.o"
+".\obj\adc.o"
+".\obj\switch.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\vinokuh.map" -o .\obj\vinokuh.axf

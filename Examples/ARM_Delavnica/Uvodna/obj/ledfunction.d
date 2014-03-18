@@ -1,0 +1,13 @@
+.\obj\ledfunction.o: ledfunction.c
+.\obj\ledfunction.o: ledfunction.h
+.\obj\ledfunction.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\ledfunction.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\ledfunction.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\ledfunction.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\ledfunction.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\ledfunction.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\ledfunction.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\ledfunction.o: .\inc\stm32f4xx_conf.h
+.\obj\ledfunction.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\ledfunction.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\ledfunction.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h

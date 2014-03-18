@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>HD44780/Release</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>186</Column0><Column1>27</Column1><Column2>27</Column2><Column3>0</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1221</ColumnWidth1></Debug-Log><Disassembly><MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly></Static>
+    <Windows>
+      
+      
+    <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-23852-15249</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>HD44780</ExpandedNode><ExpandedNode>HD44780/Application</ExpandedNode><ExpandedNode>HD44780/CMSIS</ExpandedNode><ExpandedNode>HD44780/HD44780</ExpandedNode><ExpandedNode>HD44780/Output</ExpandedNode><ExpandedNode>HD44780/StdPeriphLib</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-32175-16525</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-18472-9184</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-15411-4516</Identity><TabName>Breakpoints</TabName><Factory>Breakpoints</Factory></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\HD44780\HD44780.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>468</SelStart><SelEnd>520</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Application\main.h</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>1428</SelStart><SelEnd>1642</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Application\main.cpp</Filename><XPos>0</XPos><YPos>26</YPos><SelStart>2064</SelStart><SelEnd>2064</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\StdPeriphLib\stm32f10x_it.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>135</SelStart><SelEnd>149</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Debug\List\HD44780.map</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>30541</SelStart><SelEnd>30541</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Release\List\HD44780.map</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\HD44780\HD44780.h</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>1431</SelStart><SelEnd>1570</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\StdPeriphLib\stm32f10x_conf.h</Filename><XPos>0</XPos><YPos>52</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\CMSIS\stm32f10x.h</Filename><XPos>0</XPos><YPos>32</YPos><SelStart>1515</SelStart><SelEnd>2426</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00a4acc0><key>iaridepm.enu1</key></Toolbar-00a4acc0></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>493</Bottom><Right>277</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>272109</sizeHorzCY><sizeVertCX>217969</sizeVertCX><sizeVertCY>673469</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>200</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>272109</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>272109</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

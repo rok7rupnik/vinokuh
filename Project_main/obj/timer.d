@@ -1,0 +1,14 @@
+.\obj\timer.o: timer.c
+.\obj\timer.o: timer.h
+.\obj\timer.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\timer.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\timer.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\timer.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\timer.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\timer.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\timer.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\timer.o: .\inc\stm32f4xx_conf.h
+.\obj\timer.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\timer.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\timer.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\timer.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
