@@ -12,15 +12,16 @@
 ### List of Objects: adding '".\obj\switch.o"'
 ### List of Objects: adding '".\obj\timer.o"'
 ### List of Objects: adding '".\obj\display.o"'
+### List of Objects: adding '".\obj\encoder.o"'
 ### ADS-LD Command completed:
---cpu Cortex-M4.fp ".\obj\startup_stm32f40xx.o" ".\obj\system_stm32f4xx.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_rcc.o" ".\obj\main.o" ".\obj\gpio.o" ".\obj\adc.o" ".\obj\switch.o" ".\obj\timer.o" ".\obj\display.o" 
+--cpu Cortex-M4.fp ".\obj\startup_stm32f40xx.o" ".\obj\system_stm32f4xx.o" ".\obj\stm32f4xx_adc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_rcc.o" ".\obj\main.o" ".\obj\gpio.o" ".\obj\adc.o" ".\obj\switch.o" ".\obj\timer.o" ".\obj\display.o" ".\obj\encoder.o" 
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\vinokuh.map" -o .\obj\vinokuh.axf### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '.\obj\vinokuh.axf'
 ### ADS-LD Command File: '.\obj\vinokuh.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\obj\vinokuh.lnp', Handle=0x000003DC
+### Creating CmdFile '.\obj\vinokuh.lnp', Handle=0x0000319C
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\obj\vinokuh.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

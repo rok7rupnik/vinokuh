@@ -12,8 +12,8 @@
 
 /***************** Driver registers ********************/
 extern int LCD_CTRL_REG;
-extern int A_VALUE;
-extern int B_VALUE;
+extern int A_VALUE, B_VALUE;
+extern int T_VALUE;
 
 /*************** Example Driver ******************/
 
@@ -65,29 +65,27 @@ void dummyDriver(void) {return;}
 //needs GPIOD timer enabled to work
 void osInit(void)
 {	
-	ROUND_ROBIN[0] = testDriver;
-	ROUND_ROBIN[1] = lcdDriver;
-	ROUND_ROBIN[2] = dummyDriver;
-	ROUND_ROBIN[3] = dummyDriver;
-	ROUND_ROBIN[4] = dummyDriver;
-	ROUND_ROBIN[5] = dummyDriver;
-	ROUND_ROBIN[6] = dummyDriver;
-	ROUND_ROBIN[7] = dummyDriver;
-	ROUND_ROBIN[8] = dummyDriver;
-	ROUND_ROBIN[9] = dummyDriver;
+	int i;
 	
 	// Premaknil init Timerja 2, ker ga potrebujem za LCD
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-	NVIC->ISER[0] |= 1<< (TIM2_IRQn); // enable the TIM2 IRQ
-	 
+	NVIC->ISER[0] |= 1<< (TIM2_IRQn); // enable the TIM2 IRQ	
+	
 	TIM2->PSC = 0x0; // no prescaler, timer counts up in sync with the peripheral clock
 	TIM2->DIER |= TIM_DIER_UIE; // enable update interrupt
-	TIM2->ARR = 50 * MS_COUNT; // count to 1 (autoreload value 1) - x10, da dobimo interval enega driverja
+	TIM2->ARR = ((int)US_COUNT)*1000; // count to 1 (autoreload value 1) - x10, da dobimo interval enega driverja
 	TIM2->CR1 |= TIM_CR1_ARPE | TIM_CR1_CEN; // autoreload on, counter enabled
 	TIM2->EGR = 1; // trigger update event to reload timer registers
 	
 	//tim2->arr lahk damo se v spremenljivko
 	// Podano vrednost mnozim
+	
+	for(i=0;i<RR_LENGTH;i++)
+		ROUND_ROBIN[i] = dummyDriver;
+	
+	ROUND_ROBIN[0] = testDriver;
+	ROUND_ROBIN[1] = encoderDriver;
+	ROUND_ROBIN[2] = lcdDriver;
 }
 
 void TIM2_IRQHandler(unsigned int par) {
@@ -151,18 +149,17 @@ int main(void){
 	//int time;
 	//int i = 0;
 	
-	//char str[] = {0, 0, 0, 0};
-	char str[] = "Oujea misko!";
+	char str[32];
+	//char str[] = "Oujea misko, Vinokuh je ful kul zadeva!";
 	strExport(str);
 	
 	// **************** INIT ******************
-	ADCInit();
+	//ADCInit();
 	gpioTimerInit();
 	LEDInit();
 	encoderInit();
 	//switchInit();
-	//timerInit();
-	//timer2Init();	
+	timerInit();
 	
 	osInit();
 	LCDInit();
@@ -171,27 +168,26 @@ int main(void){
 	clrLED(LED0 | LED1 | LED2 | LED3 );
 	clrscr();
 	
+	//printstr(str);
+	
+	
+	//setLED(LED0 | LED1 | LED2 | LED3);
 	LCD_CTRL_REG = PRINTSTR;
 	
 	//ADC1Test();
 
-	//printstr(str);
-	//LCD_Goto(1,6);
-	//putch('0');
-
 	while (1)
 	{
-		/*str[0] = A_VALUE;
-		str[2] = B_VALUE;
+		IntToStr(str, T_VALUE*10000+B_VALUE*100+A_VALUE, 0);
 		
 		strExport(str);
-		LCD_CTRL_REG = PRINTSTR;*/
+		LCD_CTRL_REG = PRINTSTR;
 		
-		/*if(CONF_REG)
+		if(CONF_REG)
 		{
 			SET_REG = (SET_REG+1)%4;
 			CONF_REG = 0;
-		}*/
+		}
 	}
 		
 	/*

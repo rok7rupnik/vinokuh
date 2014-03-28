@@ -22,10 +22,18 @@ void encoderInit() {
 
 /************* Driver *****************/
 int A_VALUE = 0, B_VALUE = 0;
+int T_VALUE = 0;
 
 void encoderDriver(){
-    A_VALUE = encoderReadA();
-    B_VALUE = encoderReadB();
+	char tmp1, tmp2;
+	
+	if((tmp1 = encoderReadB()) == 0)
+		B_VALUE++;
+	if((tmp2 = encoderReadA()) == 0)
+		A_VALUE++;
+	
+	if(!tmp1 && !tmp2)
+		T_VALUE++;
 }
 
 

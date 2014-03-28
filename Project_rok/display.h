@@ -3,7 +3,26 @@
 
 // ************** Pins ******************
 
-#define	D4_Pin	GPIO_Pin_5
+#define D4_Pin  GPIO_Pin_0
+#define D4_Port GPIOE
+#define D4_Clk  RCC_AHB1Periph_GPIOE
+#define D5_Pin  GPIO_Pin_1
+#define D5_Port GPIOE
+#define D5_Clk  RCC_AHB1Periph_GPIOE
+#define D6_Pin  GPIO_Pin_2
+#define D6_Port GPIOE
+#define D6_Clk  RCC_AHB1Periph_GPIOE
+#define D7_Pin  GPIO_Pin_3
+#define D7_Port GPIOE
+#define D7_Clk  RCC_AHB1Periph_GPIOE
+#define RS_Pin  GPIO_Pin_4
+#define RS_Port GPIOE
+#define RS_Clk  RCC_AHB1Periph_GPIOE
+#define EN_Pin  GPIO_Pin_5
+#define EN_Port GPIOE
+#define EN_Clk  RCC_AHB1Periph_GPIOE
+
+/*#define	D4_Pin	GPIO_Pin_5
 #define D4_Port	GPIOD
 #define D4_Clk 	RCC_AHB1Periph_GPIOD
 #define D5_Pin	GPIO_Pin_3
@@ -18,9 +37,9 @@
 #define RS_Pin	GPIO_Pin_10
 #define RS_Port	GPIOC
 #define RS_Clk 	RCC_AHB1Periph_GPIOC
-#define EN_Pin	GPIO_Pin_14
-#define EN_Port	GPIOA
-#define EN_Clk 	RCC_AHB1Periph_GPIOA
+#define EN_Pin	GPIO_Pin_2
+#define EN_Port	GPIOB
+#define EN_Clk 	RCC_AHB1Periph_GPIOB*/
 
 extern void delay_ms(uint32_t time);
 extern void delay_us(uint32_t time);

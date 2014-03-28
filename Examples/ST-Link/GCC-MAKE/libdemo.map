@@ -1,0 +1,1009 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+GPIO_InitStructure  0x8               ../main.o
+NVIC_InitStructure  0x4               ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00020000         xrw
+CCMRAM           0x10000000         0x00010000         xrw
+FLASH            0x08000000         0x00100000         xr
+FLASHB1          0x00000000         0x00000000         xr
+EXTMEMB0         0x00000000         0x00000000         xr
+EXTMEMB1         0x00000000         0x00000000         xr
+EXTMEMB2         0x00000000         0x00000000         xr
+EXTMEMB3         0x00000000         0x00000000         xr
+MEMORY_ARRAY     0x20002000         0x00000020         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../main.o
+LOAD ../stm32f4xx_it.o
+LOAD ../system_stm32f4xx.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+LOAD ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+LOAD C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+START GROUP
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2\libgcc.a
+LOAD c:/program files (x86)/codesourcery/sourcery_codebench_lite_for_arm_eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+                0x00000400                __Stack_Size = 0x400
+                0x00000400                PROVIDE (_Stack_Size, __Stack_Size)
+                0x2001fc00                __Stack_Init = (_estack - __Stack_Size)
+                0x2001fc00                PROVIDE (_Stack_Init, __Stack_Init)
+                0x00000100                _Minimum_Stack_Size = 0x100
+                0x20020000                _estack = 0x20020000
+
+.isr_vector     0x08000000      0x188
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+                0x08000000                g_pfnVectors
+                0x08000188                . = ALIGN (0x4)
+
+.flashtext      0x08000188        0x0
+                0x08000188                . = ALIGN (0x4)
+ *(.flashtext)
+                0x08000188                . = ALIGN (0x4)
+
+.text           0x08000188     0xc0a0
+                0x08000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x08000188       0x1c ../main.o
+                0x08000188                Delay
+                0x0800019c                assert_param
+                0x080001a0                assert_failed
+ .text          0x080001a4       0x24 ../stm32f4xx_it.o
+                0x080001a4                NMI_Handler
+                0x080001a8                HardFault_Handler
+                0x080001ac                MemManage_Handler
+                0x080001b0                BusFault_Handler
+                0x080001b4                UsageFault_Handler
+                0x080001b8                SVC_Handler
+                0x080001bc                DebugMon_Handler
+                0x080001c0                PendSV_Handler
+                0x080001c4                SysTick_Handler
+ .text          0x080001c8      0x164 ../system_stm32f4xx.o
+                0x080001c8                SystemInit
+                0x080002c0                SystemCoreClockUpdate
+ .text          0x0800032c      0x138 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+                0x0800032c                STM_EVAL_LEDInit
+                0x08000374                STM_EVAL_LEDOn
+                0x08000390                STM_EVAL_LEDOff
+                0x080003ac                STM_EVAL_LEDToggle
+                0x080003cc                STM_EVAL_PBInit
+                0x0800044c                STM_EVAL_PBGetState
+ .text          0x08000464      0x194 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+                0x08000464                NVIC_PriorityGroupConfig
+                0x080004a4                NVIC_Init
+                0x08000540                NVIC_SetVectorTable
+                0x08000584                NVIC_SystemLPConfig
+                0x080005c4                SysTick_CLKSourceConfig
+ .text          0x080005f8      0x370 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+                0x080005f8                DCMI_DeInit
+                0x08000614                DCMI_Init
+                0x08000718                DCMI_StructInit
+                0x0800072c                DCMI_CROPConfig
+                0x08000748                DCMI_CROPCmd
+                0x08000774                DCMI_SetEmbeddedSynchroCodes
+                0x08000798                DCMI_JPEGCmd
+                0x080007c4                DCMI_Cmd
+                0x080007f0                DCMI_CaptureCmd
+                0x0800081c                DCMI_ReadData
+                0x08000828                DCMI_ITConfig
+                0x0800086c                DCMI_GetFlagStatus
+                0x08000904                DCMI_ClearFlag
+                0x08000928                DCMI_GetITStatus
+                0x0800095c                DCMI_ClearITPendingBit
+ .text          0x08000968     0x132c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+                0x08000968                DMA_DeInit
+                0x08000c94                DMA_Init
+                0x08000f5c                DMA_StructInit
+                0x08000f80                DMA_Cmd
+                0x0800101c                DMA_PeriphIncOffsetSizeConfig
+                0x080010c8                DMA_FlowControllerConfig
+                0x0800116c                DMA_SetCurrDataCounter
+                0x080011ec                DMA_GetCurrDataCounter
+                0x08001270                DMA_DoubleBufferModeConfig
+                0x0800131c                DMA_DoubleBufferModeCmd
+                0x080013b8                DMA_MemoryTargetConfig
+                0x08001458                DMA_GetCurrentMemoryTarget
+                0x080014e0                DMA_GetCmdStatus
+                0x08001560                DMA_GetFIFOStatus
+                0x080015e0                DMA_GetFlagStatus
+                0x080017cc                DMA_ClearFlag
+                0x08001898                DMA_ITConfig
+                0x08001974                DMA_GetITStatus
+                0x08001bc0                DMA_ClearITPendingBit
+ .text          0x08001c94      0x2b8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+                0x08001c94                EXTI_DeInit
+                0x08001cb0                EXTI_Init
+                0x08001d9c                EXTI_StructInit
+                0x08001dac                EXTI_GenerateSWInterrupt
+                0x08001dd0                EXTI_GetFlagStatus
+                0x08001e68                EXTI_ClearFlag
+                0x08001e88                EXTI_GetITStatus
+                0x08001f2c                EXTI_ClearITPendingBit
+ .text          0x08001f4c      0xf50 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+                0x08001f4c                FLASH_SetLatency
+                0x08001f68                FLASH_PrefetchBufferCmd
+                0x08001f94                FLASH_InstructionCacheCmd
+                0x08001fc0                FLASH_DataCacheCmd
+                0x08001fec                FLASH_InstructionCacheReset
+                0x08001ffc                FLASH_DataCacheReset
+                0x0800200c                FLASH_Unlock
+                0x08002028                FLASH_Lock
+                0x08002038                FLASH_EraseSector
+                0x08002200                FLASH_EraseAllSectors
+                0x08002378                FLASH_ProgramDoubleWord
+                0x080024f4                FLASH_ProgramWord
+                0x0800266c                FLASH_ProgramHalfWord
+                0x080027e4                FLASH_ProgramByte
+                0x08002958                FLASH_OB_Unlock
+                0x08002974                FLASH_OB_Lock
+                0x08002984                FLASH_OB_WRPConfig
+                0x08002a64                FLASH_OB_RDPConfig
+                0x08002b20                FLASH_OB_UserConfig
+                0x08002c1c                FLASH_OB_BORConfig
+                0x08002c54                FLASH_OB_Launch
+                0x08002cf8                FLASH_OB_GetUser
+                0x08002d08                FLASH_OB_GetWRP
+                0x08002d14                FLASH_OB_GetRDP
+                0x08002d24                FLASH_OB_GetBOR
+                0x08002d34                FLASH_ITConfig
+                0x08002d74                FLASH_GetFlagStatus
+                0x08002db0                FLASH_ClearFlag
+                0x08002dd4                FLASH_GetStatus
+                0x08002e08                FLASH_WaitForLastOperation
+ .text          0x08002e9c      0xc9c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+                0x08002e9c                FSMC_NORSRAMDeInit
+                0x08002ef0                FSMC_NORSRAMInit
+                0x080032f0                FSMC_NORSRAMStructInit
+                0x08003358                FSMC_NORSRAMCmd
+                0x080033b4                FSMC_NANDDeInit
+                0x080033f0                FSMC_NANDInit
+                0x080035b8                FSMC_NANDStructInit
+                0x080035f4                FSMC_NANDCmd
+                0x08003668                FSMC_NANDECCCmd
+                0x080036dc                FSMC_GetECC
+                0x080036f0                FSMC_PCCARDDeInit
+                0x0800370c                FSMC_PCCARDInit
+                0x08003860                FSMC_PCCARDStructInit
+                0x0800389c                FSMC_PCCARDCmd
+                0x080038d0                FSMC_ITConfig
+                0x08003968                FSMC_GetFlagStatus
+                0x080039e0                FSMC_ClearFlag
+                0x08003a4c                FSMC_GetITStatus
+                0x08003ac8                FSMC_ClearITPendingBit
+ .text          0x08003b38      0x8e4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08003b38                GPIO_DeInit
+                0x08003c7c                GPIO_Init
+                0x08003db4                GPIO_StructInit
+                0x08003dc8                GPIO_PinLockConfig
+                0x08003e54                GPIO_ReadInputDataBit
+                0x08003f28                GPIO_ReadInputData
+                0x08003f88                GPIO_ReadOutputDataBit
+                0x08004050                GPIO_ReadOutputData
+                0x080040b8                GPIO_SetBits
+                0x08004128                GPIO_ResetBits
+                0x08004194                GPIO_WriteBit
+                0x08004268                GPIO_Write
+                0x080042d0                GPIO_ToggleBits
+                0x0800433c                GPIO_PinAFConfig
+ .text          0x0800441c      0xb60 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x0800441c                RCC_DeInit
+                0x08004450                RCC_HSEConfig
+                0x08004474                RCC_WaitForHSEStartUp
+                0x080044b8                RCC_AdjustHSICalibrationValue
+                0x080044dc                RCC_HSICmd
+                0x080044f8                RCC_LSEConfig
+                0x0800452c                RCC_LSICmd
+                0x08004548                RCC_PLLConfig
+                0x080045dc                RCC_PLLCmd
+                0x080045f8                RCC_PLLI2SConfig
+                0x0800462c                RCC_PLLI2SCmd
+                0x08004648                RCC_ClockSecuritySystemCmd
+                0x08004664                RCC_MCO1Config
+                0x080046c8                RCC_MCO2Config
+                0x08004730                RCC_SYSCLKConfig
+                0x08004754                RCC_GetSYSCLKSource
+                0x08004764                RCC_HCLKConfig
+                0x080047ac                RCC_PCLK1Config
+                0x080047e8                RCC_PCLK2Config
+                0x08004824                RCC_GetClocksFreq
+                0x080048b4                RCC_RTCCLKConfig
+                0x08004a0c                RCC_RTCCLKCmd
+                0x08004a28                RCC_BackupResetCmd
+                0x08004a44                RCC_I2SCLKConfig
+                0x08004a60                RCC_AHB1PeriphClockCmd
+                0x08004aa4                RCC_AHB2PeriphClockCmd
+                0x08004ae4                RCC_AHB3PeriphClockCmd
+                0x08004b24                RCC_APB1PeriphClockCmd
+                0x08004b68                RCC_APB2PeriphClockCmd
+                0x08004bac                RCC_AHB1PeriphResetCmd
+                0x08004bf0                RCC_AHB2PeriphResetCmd
+                0x08004c30                RCC_AHB3PeriphResetCmd
+                0x08004c70                RCC_APB1PeriphResetCmd
+                0x08004cb4                RCC_APB2PeriphResetCmd
+                0x08004cf8                RCC_AHB1PeriphClockLPModeCmd
+                0x08004d3c                RCC_AHB2PeriphClockLPModeCmd
+                0x08004d7c                RCC_AHB3PeriphClockLPModeCmd
+                0x08004dbc                RCC_APB1PeriphClockLPModeCmd
+                0x08004e00                RCC_APB2PeriphClockLPModeCmd
+                0x08004e44                RCC_ITConfig
+                0x08004e84                RCC_GetFlagStatus
+                0x08004f0c                RCC_ClearFlag
+                0x08004f1c                RCC_GetITStatus
+                0x08004f58                RCC_ClearITPendingBit
+ .text          0x08004f7c     0x168c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                0x08004f7c                RTC_DeInit
+                0x08005060                RTC_Init
+                0x08005110                RTC_StructInit
+                0x0800511c                RTC_WriteProtectionCmd
+                0x08005148                RTC_EnterInitMode
+                0x08005188                RTC_ExitInitMode
+                0x08005198                RTC_WaitForSynchro
+                0x080051dc                RTC_RefClockCmd
+                0x08005260                RTC_BypassShadowCmd
+                0x08005298                RTC_SetTime
+                0x080054c0                RTC_TimeStructInit
+                0x080054cc                RTC_GetTime
+                0x0800553c                RTC_GetSubSecond
+                0x08005548                RTC_SetDate
+                0x08005738                RTC_DateStructInit
+                0x08005748                RTC_GetDate
+                0x080057b4                RTC_SetAlarm
+                0x08005a44                RTC_AlarmStructInit
+                0x08005a54                RTC_GetAlarm
+                0x08005b28                RTC_AlarmCmd
+                0x08005ba0                RTC_AlarmSubSecondConfig
+                0x08005c54                RTC_GetAlarmSubSecond
+                0x08005c6c                RTC_WakeUpClockConfig
+                0x08005ca4                RTC_SetWakeUpCounter
+                0x08005ccc                RTC_GetWakeUpCounter
+                0x08005cd8                RTC_WakeUpCmd
+                0x08005d3c                RTC_DayLightSavingConfig
+                0x08005d98                RTC_GetStoreOperation
+                0x08005da8                RTC_OutputConfig
+                0x08005e08                RTC_CoarseCalibConfig
+                0x08005e8c                RTC_CoarseCalibCmd
+                0x08005f10                RTC_CalibOutputCmd
+                0x08005f48                RTC_CalibOutputConfig
+                0x08005f80                RTC_SmoothCalibConfig
+                0x08006018                RTC_TimeStampCmd
+                0x08006070                RTC_GetTimeStamp
+                0x08006138                RTC_GetTimeStampSubSecond
+                0x08006144                RTC_TamperTriggerConfig
+                0x08006180                RTC_TamperCmd
+                0x080061b4                RTC_TamperFilterConfig
+                0x080061ec                RTC_TamperSamplingFreqConfig
+                0x0800623c                RTC_TamperPinsPrechargeDuration
+                0x08006278                RTC_TimeStampOnTamperDetectionCmd
+                0x080062a4                RTC_TamperPullUpCmd
+                0x080062d0                RTC_WriteBackupRegister
+                0x08006300                RTC_ReadBackupRegister
+                0x08006330                RTC_TamperPinSelection
+                0x08006360                RTC_TimeStampPinSelection
+                0x0800638c                RTC_OutputTypeConfig
+                0x080063b8                RTC_SynchroShiftConfig
+                0x08006474                RTC_ITConfig
+                0x080064dc                RTC_GetFlagStatus
+                0x08006548                RTC_ClearFlag
+                0x0800657c                RTC_GetITStatus
+                0x080065d8                RTC_ClearITPendingBit
+ .text          0x08006608      0xbc8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+                0x08006608                SPI_I2S_DeInit
+                0x08006688                SPI_Init
+                0x080067fc                I2S_Init
+                0x080069ec                SPI_StructInit
+                0x08006a04                I2S_StructInit
+                0x08006a14                SPI_Cmd
+                0x08006a68                I2S_Cmd
+                0x08006ac4                SPI_DataSizeConfig
+                0x08006b2c                SPI_BiDirectionalLineConfig
+                0x08006b94                SPI_NSSInternalSoftwareConfig
+                0x08006c00                SPI_SSOutputCmd
+                0x08006c58                SPI_TIModeCmd
+                0x08006cac                I2S_FullDuplexConfig
+                0x08006d9c                SPI_I2S_ReceiveData
+                0x08006ddc                SPI_I2S_SendData
+                0x08006e18                SPI_CalculateCRC
+                0x08006e6c                SPI_TransmitCRC
+                0x08006ea4                SPI_GetCRC
+                0x08006ef0                SPI_GetCRCPolynomial
+                0x08006f28                SPI_I2S_DMACmd
+                0x08006fa4                SPI_I2S_ITConfig
+                0x08007020                SPI_I2S_GetFlagStatus
+                0x080070a0                SPI_I2S_ClearFlag
+                0x080070ec                SPI_I2S_GetITStatus
+                0x08007178                SPI_I2S_ClearITPendingBit
+ .text          0x080071d0       0xd8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+                0x080071d0                SYSCFG_DeInit
+                0x080071ec                SYSCFG_MemoryRemapConfig
+                0x08007210                SYSCFG_EXTILineConfig
+                0x08007260                SYSCFG_ETH_MediaInterfaceConfig
+                0x0800727c                SYSCFG_CompensationCellCmd
+                0x08007298                SYSCFG_GetCompensationCellStatus
+ .text          0x080072a8     0x3ce8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x080072a8                TIM_DeInit
+                0x080074ac                TIM_TimeBaseInit
+                0x0800761c                TIM_TimeBaseStructInit
+                0x08007630                TIM_PrescalerConfig
+                0x080076cc                TIM_CounterModeConfig
+                0x08007744                TIM_SetCounter
+                0x080077cc                TIM_SetAutoreload
+                0x08007858                TIM_GetCounter
+                0x080078e4                TIM_GetPrescaler
+                0x0800796c                TIM_UpdateDisableConfig
+                0x08007a14                TIM_UpdateRequestConfig
+                0x08007abc                TIM_ARRPreloadConfig
+                0x08007b6c                TIM_SelectOnePulseMode
+                0x08007c24                TIM_SetClockDivision
+                0x08007ccc                TIM_Cmd
+                0x08007d74                TIM_OC1Init
+                0x08007f28                TIM_OC2Init
+                0x080080c4                TIM_OC3Init
+                0x08008244                TIM_OC4Init
+                0x0800835c                TIM_OCStructInit
+                0x08008370                TIM_SelectOCxM
+                0x08008484                TIM_SetCompare1
+                0x08008500                TIM_SetCompare2
+                0x08008558                TIM_SetCompare3
+                0x080085a0                TIM_SetCompare4
+                0x080085e8                TIM_ForcedOC1Config
+                0x08008690                TIM_ForcedOC2Config
+                0x08008710                TIM_ForcedOC3Config
+                0x08008784                TIM_ForcedOC4Config
+                0x080087f8                TIM_OC1PreloadConfig
+                0x08008894                TIM_OC2PreloadConfig
+                0x08008914                TIM_OC3PreloadConfig
+                0x08008988                TIM_OC4PreloadConfig
+                0x080089fc                TIM_OC1FastConfig
+                0x08008a98                TIM_OC2FastConfig
+                0x08008b18                TIM_OC3FastConfig
+                0x08008b84                TIM_OC4FastConfig
+                0x08008bf8                TIM_ClearOC1Ref
+                0x08008c9c                TIM_ClearOC2Ref
+                0x08008d18                TIM_ClearOC3Ref
+                0x08008d84                TIM_ClearOC4Ref
+                0x08008df0                TIM_OC1PolarityConfig
+                0x08008e94                TIM_OC1NPolarityConfig
+                0x08008edc                TIM_OC2PolarityConfig
+                0x08008f5c                TIM_OC2NPolarityConfig
+                0x08008fa8                TIM_OC3PolarityConfig
+                0x08009014                TIM_OC3NPolarityConfig
+                0x08009068                TIM_OC4PolarityConfig
+                0x080090d4                TIM_CCxCmd
+                0x08009198                TIM_CCxNCmd
+                0x08009210                TIM_ICInit
+                0x080096d0                TIM_ICStructInit
+                0x080096e0                TIM_PWMIConfig
+                0x08009a9c                TIM_GetCapture1
+                0x08009b10                TIM_GetCapture2
+                0x08009b6c                TIM_GetCapture3
+                0x08009bb8                TIM_GetCapture4
+                0x08009bfc                TIM_SetIC1Prescaler
+                0x08009ca4                TIM_SetIC2Prescaler
+                0x08009d38                TIM_SetIC3Prescaler
+                0x08009db0                TIM_SetIC4Prescaler
+                0x08009e30                TIM_BDTRConfig
+                0x08009f2c                TIM_BDTRStructInit
+                0x08009f40                TIM_CtrlPWMOutputs
+                0x08009f90                TIM_SelectCOM
+                0x08009fe0                TIM_CCPreloadControl
+                0x0800a030                TIM_ITConfig
+                0x0800a0f0                TIM_GenerateEvent
+                0x0800a194                TIM_GetFlagStatus
+                0x0800a270                TIM_ClearFlag
+                0x0800a300                TIM_GetITStatus
+                0x0800a3c8                TIM_ClearITPendingBit
+                0x0800a450                TIM_DMAConfig
+                0x0800a524                TIM_DMACmd
+                0x0800a5bc                TIM_SelectCCDMA
+                0x0800a624                TIM_InternalClockConfig
+                0x0800a684                TIM_ETRClockMode1Config
+                0x0800a7cc                TIM_ETRClockMode2Config
+                0x0800a910                TIM_SelectInputTrigger
+                0x0800a9c4                TIM_TIxExternalClockConfig
+                0x0800aafc                TIM_ITRxExternalClockConfig
+                0x0800ab84                TIM_SelectOutputTrigger
+                0x0800ac24                TIM_SelectSlaveMode
+                0x0800aca0                TIM_SelectMasterSlaveMode
+                0x0800ad24                TIM_ETRConfig
+                0x0800adc8                TIM_EncoderInterfaceConfig
+                0x0800aeb0                TIM_SelectHallSensor
+                0x0800af30                TIM_RemapConfig
+ .text          0x0800af90     0x1078 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                0x0800af90                USART_DeInit
+                0x0800b07c                USART_Init
+                0x0800b27c                USART_StructInit
+                0x0800b294                USART_ClockInit
+                0x0800b360                USART_ClockStructInit
+                0x0800b36c                USART_Cmd
+                0x0800b3d8                USART_SetPrescaler
+                0x0800b430                USART_OverSampling8Cmd
+                0x0800b498                USART_OneBitMethodCmd
+                0x0800b508                USART_SendData
+                0x0800b568                USART_ReceiveData
+                0x0800b5b4                USART_SetAddress
+                0x0800b61c                USART_ReceiverWakeUpCmd
+                0x0800b688                USART_WakeUpConfig
+                0x0800b704                USART_LINBreakDetectLengthConfig
+                0x0800b778                USART_LINCmd
+                0x0800b7e4                USART_SendBreak
+                0x0800b838                USART_HalfDuplexCmd
+                0x0800b8a8                USART_SetGuardTime
+                0x0800b8f0                USART_SmartCardCmd
+                0x0800b94c                USART_SmartCardNACKCmd
+                0x0800b9a8                USART_IrDAConfig
+                0x0800ba24                USART_IrDACmd
+                0x0800ba94                USART_DMACmd
+                0x0800bb1c                USART_ITConfig
+                0x0800bc7c                USART_GetFlagStatus
+                0x0800bd40                USART_ClearFlag
+                0x0800bdf0                USART_GetITStatus
+                0x0800bf54                USART_ClearITPendingBit
+ .text          0x0800c008       0xec ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+                0x0800c008                WWDG_DeInit
+                0x0800c024                WWDG_SetPrescaler
+                0x0800c058                WWDG_SetWindowValue
+                0x0800c08c                WWDG_EnableIT
+                0x0800c098                WWDG_SetCounter
+                0x0800c0b8                WWDG_Enable
+                0x0800c0d8                WWDG_GetFlagStatus
+                0x0800c0e8                WWDG_ClearFlag
+ .text          0x0800c0f4       0x14 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+ *(.text.*)
+ .text.startup  0x0800c108       0xa0 ../main.o
+                0x0800c108                main
+ .text.Reset_Handler
+                0x0800c1a8       0x4c C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+                0x0800c1a8                Reset_Handler
+ .text.Default_Handler
+                0x0800c1f4        0x4 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+                0x0800c1f4                RTC_Alarm_IRQHandler
+                0x0800c1f4                HASH_RNG_IRQHandler
+                0x0800c1f4                EXTI2_IRQHandler
+                0x0800c1f4                TIM8_CC_IRQHandler
+                0x0800c1f4                TIM1_CC_IRQHandler
+                0x0800c1f4                DMA2_Stream5_IRQHandler
+                0x0800c1f4                DMA1_Stream5_IRQHandler
+                0x0800c1f4                PVD_IRQHandler
+                0x0800c1f4                SDIO_IRQHandler
+                0x0800c1f4                TAMP_STAMP_IRQHandler
+                0x0800c1f4                CAN2_RX1_IRQHandler
+                0x0800c1f4                EXTI3_IRQHandler
+                0x0800c1f4                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0800c1f4                TIM1_UP_TIM10_IRQHandler
+                0x0800c1f4                TIM8_UP_TIM13_IRQHandler
+                0x0800c1f4                I2C3_ER_IRQHandler
+                0x0800c1f4                EXTI0_IRQHandler
+                0x0800c1f4                I2C2_EV_IRQHandler
+                0x0800c1f4                DMA1_Stream2_IRQHandler
+                0x0800c1f4                CAN1_RX0_IRQHandler
+                0x0800c1f4                FPU_IRQHandler
+                0x0800c1f4                OTG_HS_WKUP_IRQHandler
+                0x0800c1f4                CAN2_SCE_IRQHandler
+                0x0800c1f4                DMA2_Stream2_IRQHandler
+                0x0800c1f4                SPI1_IRQHandler
+                0x0800c1f4                TIM6_DAC_IRQHandler
+                0x0800c1f4                TIM1_BRK_TIM9_IRQHandler
+                0x0800c1f4                DCMI_IRQHandler
+                0x0800c1f4                CAN2_RX0_IRQHandler
+                0x0800c1f4                DMA2_Stream3_IRQHandler
+                0x0800c1f4                USART6_IRQHandler
+                0x0800c1f4                USART3_IRQHandler
+                0x0800c1f4                CRYP_IRQHandler
+                0x0800c1f4                CAN1_RX1_IRQHandler
+                0x0800c1f4                UART5_IRQHandler
+                0x0800c1f4                DMA2_Stream0_IRQHandler
+                0x0800c1f4                TIM4_IRQHandler
+                0x0800c1f4                I2C1_EV_IRQHandler
+                0x0800c1f4                DMA1_Stream6_IRQHandler
+                0x0800c1f4                DMA1_Stream1_IRQHandler
+                0x0800c1f4                UART4_IRQHandler
+                0x0800c1f4                TIM3_IRQHandler
+                0x0800c1f4                RCC_IRQHandler
+                0x0800c1f4                TIM8_BRK_TIM12_IRQHandler
+                0x0800c1f4                Default_Handler
+                0x0800c1f4                EXTI15_10_IRQHandler
+                0x0800c1f4                ADC_IRQHandler
+                0x0800c1f4                DMA1_Stream7_IRQHandler
+                0x0800c1f4                TIM7_IRQHandler
+                0x0800c1f4                CAN2_TX_IRQHandler
+                0x0800c1f4                TIM5_IRQHandler
+                0x0800c1f4                DMA2_Stream7_IRQHandler
+                0x0800c1f4                I2C3_EV_IRQHandler
+                0x0800c1f4                EXTI9_5_IRQHandler
+                0x0800c1f4                RTC_WKUP_IRQHandler
+                0x0800c1f4                ETH_WKUP_IRQHandler
+                0x0800c1f4                SPI2_IRQHandler
+                0x0800c1f4                OTG_HS_EP1_IN_IRQHandler
+                0x0800c1f4                DMA1_Stream0_IRQHandler
+                0x0800c1f4                CAN1_TX_IRQHandler
+                0x0800c1f4                EXTI4_IRQHandler
+                0x0800c1f4                FSMC_IRQHandler
+                0x0800c1f4                ETH_IRQHandler
+                0x0800c1f4                OTG_HS_EP1_OUT_IRQHandler
+                0x0800c1f4                WWDG_IRQHandler
+                0x0800c1f4                TIM2_IRQHandler
+                0x0800c1f4                OTG_FS_WKUP_IRQHandler
+                0x0800c1f4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0800c1f4                OTG_HS_IRQHandler
+                0x0800c1f4                EXTI1_IRQHandler
+                0x0800c1f4                USART2_IRQHandler
+                0x0800c1f4                I2C2_ER_IRQHandler
+                0x0800c1f4                DMA2_Stream1_IRQHandler
+                0x0800c1f4                CAN1_SCE_IRQHandler
+                0x0800c1f4                FLASH_IRQHandler
+                0x0800c1f4                DMA2_Stream4_IRQHandler
+                0x0800c1f4                USART1_IRQHandler
+                0x0800c1f4                OTG_FS_IRQHandler
+                0x0800c1f4                SPI3_IRQHandler
+                0x0800c1f4                DMA1_Stream4_IRQHandler
+                0x0800c1f4                I2C1_ER_IRQHandler
+                0x0800c1f4                DMA2_Stream6_IRQHandler
+                0x0800c1f4                DMA1_Stream3_IRQHandler
+ *(.rodata)
+ .rodata        0x0800c1f8       0x30 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+                0x0800c1f8                GPIO_CLK
+                0x0800c208                GPIO_PIN
+                0x0800c210                BUTTON_IRQn
+                0x0800c214                BUTTON_PIN_SOURCE
+                0x0800c218                BUTTON_PORT_SOURCE
+                0x0800c21c                BUTTON_EXTI_LINE
+                0x0800c220                BUTTON_CLK
+                0x0800c224                BUTTON_PIN
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+                0x0800c228                . = ALIGN (0x4)
+                0x0800c228                _etext = .
+                0x0800c228                _sidata = _etext
+
+.vfp11_veneer   0x0800c228        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0800c228        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x0800c228        0x0
+ .iplt          0x00000000        0x0 ../main.o
+
+.rel.dyn        0x0800c228        0x0
+ .rel.iplt      0x00000000        0x0 ../main.o
+
+.ROarraySection
+ *(.ROarraySection)
+
+.data           0x20000000       0x38 load address 0x0800c228
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000        0x0 ../main.o
+ .data          0x20000000        0x0 ../stm32f4xx_it.o
+ .data          0x20000000       0x14 ../system_stm32f4xx.o
+                0x20000000                AHBPrescTable
+                0x20000010                SystemCoreClock
+ .data          0x20000014       0x14 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+                0x20000014                GPIO_PORT
+                0x20000024                BUTTON_PORT
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .data          0x20000028        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .data          0x20000028       0x10 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .data          0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .data          0x20000038        0x0 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+ *(.data.*)
+                0x20000038                . = ALIGN (0x4)
+                0x20000038                _edata = .
+
+.igot.plt       0x20000038        0x0 load address 0x0800c260
+ .igot.plt      0x00000000        0x0 ../main.o
+
+.bss            0x20000038        0xc load address 0x0800c260
+                0x20000038                . = ALIGN (0x4)
+                0x20000038                _sbss = .
+ *(.bss)
+ .bss           0x20000038        0x0 ../main.o
+ .bss           0x20000038        0x0 ../stm32f4xx_it.o
+ .bss           0x20000038        0x0 ../system_stm32f4xx.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .bss           0x20000038        0x0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .bss           0x20000038        0x0 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+ *(COMMON)
+ COMMON         0x20000038        0x8 ../main.o
+                0x20000038                GPIO_InitStructure
+ COMMON         0x20000040        0x4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+                0x20000040                NVIC_InitStructure
+                0x20000044                . = ALIGN (0x4)
+                0x20000044                _ebss = .
+                0x20000044                PROVIDE (end, _ebss)
+                0x20000044                PROVIDE (_end, _ebss)
+
+._usrstack      0x20000044      0x100 load address 0x0800c26c
+                0x20000044                . = ALIGN (0x4)
+                0x20000044                _susrstack = .
+                0x20000144                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000044      0x100 
+                0x20000144                . = ALIGN (0x4)
+                0x20000144                _eusrstack = .
+
+.b1text
+ *(.b1text)
+ *(.b1rodata)
+ *(.b1rodata*)
+
+.eb0text
+ *(.eb0text)
+ *(.eb0rodata)
+ *(.eb0rodata*)
+
+.eb1text
+ *(.eb1text)
+ *(.eb1rodata)
+ *(.eb1rodata*)
+
+.eb2text
+ *(.eb2text)
+ *(.eb2rodata)
+ *(.eb2rodata*)
+
+.eb3text
+ *(.eb3text)
+ *(.eb3rodata)
+ *(.eb3rodata*)
+
+DISCARD
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 ../main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 ../stm32f4xx_it.o
+ .comment       0x00000000       0x31 ../system_stm32f4xx.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .comment       0x00000000       0x31 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+
+.ARM.attributes
+                0x00000000       0x35
+ .ARM.attributes
+                0x00000000       0x37 ../main.o
+ .ARM.attributes
+                0x00000037       0x37 ../stm32f4xx_it.o
+ .ARM.attributes
+                0x0000006e       0x37 ../system_stm32f4xx.o
+ .ARM.attributes
+                0x000000a5       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .ARM.attributes
+                0x000000dc       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .ARM.attributes
+                0x00000113       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .ARM.attributes
+                0x0000014a       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .ARM.attributes
+                0x00000181       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .ARM.attributes
+                0x000001b8       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .ARM.attributes
+                0x000001ef       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .ARM.attributes
+                0x00000226       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .ARM.attributes
+                0x0000025d       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .ARM.attributes
+                0x00000294       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .ARM.attributes
+                0x000002cb       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .ARM.attributes
+                0x00000302       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .ARM.attributes
+                0x00000339       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .ARM.attributes
+                0x00000370       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .ARM.attributes
+                0x000003a7       0x37 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .ARM.attributes
+                0x000003de       0x21 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x270
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../main.o
+ .debug_aranges
+                0x00000028       0x20 ../stm32f4xx_it.o
+ .debug_aranges
+                0x00000048       0x20 ../system_stm32f4xx.o
+ .debug_aranges
+                0x00000068       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_aranges
+                0x00000088       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_aranges
+                0x000000a8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_aranges
+                0x000000c8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_aranges
+                0x000000e8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_aranges
+                0x00000108       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_aranges
+                0x00000128       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_aranges
+                0x00000148       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_aranges
+                0x00000168       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_aranges
+                0x00000188       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_aranges
+                0x000001a8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_aranges
+                0x000001c8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_aranges
+                0x000001e8       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_aranges
+                0x00000208       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_aranges
+                0x00000228       0x20 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .debug_aranges
+                0x00000248       0x28 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x11654
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x520 ../main.o
+ .debug_info    0x00000520      0x14e ../stm32f4xx_it.o
+ .debug_info    0x0000066e      0x614 ../system_stm32f4xx.o
+ .debug_info    0x00000c82      0xa3a ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_info    0x000016bc      0x6be ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_info    0x00001d7a      0x7e6 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_info    0x00002560      0xcf0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_info    0x00003250      0x479 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_info    0x000036c9     0x163b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_info    0x00004d04     0x1048 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_info    0x00005d4c      0xb73 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_info    0x000068bf     0x168f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_info    0x00007f4e     0x282f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_info    0x0000a77d     0x124d ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_info    0x0000b9ca      0x3dc ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_info    0x0000bda6     0x4081 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_info    0x0000fe27     0x13e2 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_info    0x00011209      0x39b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .debug_info    0x000115a4       0xb0 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+
+.debug_abbrev   0x00000000     0x246e
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1ec ../main.o
+ .debug_abbrev  0x000001ec       0x67 ../stm32f4xx_it.o
+ .debug_abbrev  0x00000253      0x15f ../system_stm32f4xx.o
+ .debug_abbrev  0x000003b2      0x1f8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_abbrev  0x000005aa      0x181 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_abbrev  0x0000072b      0x233 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_abbrev  0x0000095e      0x1e7 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_abbrev  0x00000b45      0x228 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_abbrev  0x00000d6d      0x283 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_abbrev  0x00000ff0      0x21e ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_abbrev  0x0000120e      0x231 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_abbrev  0x0000143f      0x2e3 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_abbrev  0x00001722      0x2d7 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_abbrev  0x000019f9      0x222 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_abbrev  0x00001c1b      0x19b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_abbrev  0x00001db6      0x2df ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_abbrev  0x00002095      0x21d ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_abbrev  0x000022b2      0x1aa ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .debug_abbrev  0x0000245c       0x12 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+
+.debug_line     0x00000000     0x939f
+ *(.debug_line)
+ .debug_line    0x00000000      0x257 ../main.o
+ .debug_line    0x00000257      0x144 ../stm32f4xx_it.o
+ .debug_line    0x0000039b      0x1df ../system_stm32f4xx.o
+ .debug_line    0x0000057a      0x2e9 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_line    0x00000863      0x2ea ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_line    0x00000b4d      0x443 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_line    0x00000f90      0xe80 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_line    0x00001e10      0x3fd ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_line    0x0000220d      0x93e ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_line    0x00002b4b      0x899 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_line    0x000033e4      0x7d5 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_line    0x00003bb9      0x8e1 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_line    0x0000449a      0xd04 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_line    0x0000519e      0x94f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_line    0x00005aed      0x28f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_line    0x00005d7c     0x2801 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_line    0x0000857d      0xb18 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_line    0x00009095      0x29b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .debug_line    0x00009330       0x6f C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o
+
+.debug_frame    0x00000000     0x2750
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x5c ../main.o
+ .debug_frame   0x0000005c       0xa0 ../stm32f4xx_it.o
+ .debug_frame   0x000000fc       0x34 ../system_stm32f4xx.o
+ .debug_frame   0x00000130       0x90 ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_frame   0x000001c0       0x94 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_frame   0x00000254      0x15c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_frame   0x000003b0      0x210 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_frame   0x000005c0       0xc0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_frame   0x00000680      0x2b4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_frame   0x00000934      0x1f4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_frame   0x00000b28      0x18c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_frame   0x00000cb4      0x470 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_frame   0x00001124      0x564 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_frame   0x00001688      0x2b4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_frame   0x0000193c       0x9c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_frame   0x000019d8      0x9a0 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_frame   0x00002378      0x31c ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_frame   0x00002694       0xbc ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+
+.debug_str      0x00000000     0x47e5
+ *(.debug_str)
+ .debug_str     0x00000000      0x338 ../main.o
+                                0x374 (size before relaxing)
+ .debug_str     0x00000338       0xa2 ../stm32f4xx_it.o
+                                0x1c7 (size before relaxing)
+ .debug_str     0x000003da      0x1fa ../system_stm32f4xx.o
+                                0x357 (size before relaxing)
+ .debug_str     0x000005d4      0x87d ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+                                0xb99 (size before relaxing)
+ .debug_str     0x00000e51      0x17b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+                                0x3de (size before relaxing)
+ .debug_str     0x00000fcc      0x347 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+                                0x4de (size before relaxing)
+ .debug_str     0x00001313      0x3b9 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+                                0x551 (size before relaxing)
+ .debug_str     0x000016cc      0x111 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+                                0x37c (size before relaxing)
+ .debug_str     0x000017dd      0x3c8 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+                                0x58c (size before relaxing)
+ .debug_str     0x00001ba5      0x5f6 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+                                0x799 (size before relaxing)
+ .debug_str     0x0000219b      0x18e ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                                0x4cf (size before relaxing)
+ .debug_str     0x00002329      0x53f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                                0x855 (size before relaxing)
+ .debug_str     0x00002868      0x989 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+                                0xb58 (size before relaxing)
+ .debug_str     0x000031f1      0x3c5 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+                                0x6bd (size before relaxing)
+ .debug_str     0x000035b6      0x168 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+                                0x31b (size before relaxing)
+ .debug_str     0x0000371e      0xb7d ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                                0xe03 (size before relaxing)
+ .debug_str     0x0000429b      0x44b ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                                0x6d4 (size before relaxing)
+ .debug_str     0x000046e6       0xff ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+                                0x2ae (size before relaxing)
+
+.debug_loc      0x00000000    0x101e7
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xc9 ../main.o
+ .debug_loc     0x000000c9      0x18a ../system_stm32f4xx.o
+ .debug_loc     0x00000253      0x11d ../../../../../STM32F4-Discovery_FW_V1.1.0/Utilities/STM32F4-Discovery/stm32f4_discovery.o
+ .debug_loc     0x00000370      0x2af ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+ .debug_loc     0x0000061f      0x490 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_loc     0x00000aaf      0xc2e ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_loc     0x000016dd      0x303 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+ .debug_loc     0x000019e0     0x1bc1 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_loc     0x000035a1      0x9c4 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_loc     0x00003f65      0x8e3 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_loc     0x00004848     0x1976 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_loc     0x000061be     0x2d00 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_loc     0x00008ebe     0x104f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_loc     0x00009f0d      0x1bf ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_loc     0x0000a0cc     0x494f ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_loc     0x0000ea1b     0x15ea ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_loc     0x00010005      0x1e2 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(Libdemo.elf elf32-littlearm)
+
+.debug_ranges   0x00000000     0x1758
+ .debug_ranges  0x00000000       0x18 ../main.o
+ .debug_ranges  0x00000018       0x30 ../system_stm32f4xx.o
+ .debug_ranges  0x00000048      0xd70 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_ranges  0x00000db8       0x30 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_ranges  0x00000de8      0x510 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_ranges  0x000012f8      0x440 ../../../../../STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_ranges  0x00001738       0x20 C:\Users\Operator\AppData\Local\Temp\ccvKBczh.o

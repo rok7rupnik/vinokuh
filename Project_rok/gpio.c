@@ -23,13 +23,6 @@ void gpioInit(uint16_t GPIO_Pins,						\
 	GPIO_Init(GPIO_abcd, &gpioT); 
 }
 
-
-// ************** Encoder *****************
-
-void encoderInit(void){
-	
-}
-
 // ************** LED *********************
 
 void LEDInit() {

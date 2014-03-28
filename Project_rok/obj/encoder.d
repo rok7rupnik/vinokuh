@@ -1,0 +1,15 @@
+.\obj\encoder.o: encoder.c
+.\obj\encoder.o: encoder.h
+.\obj\encoder.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\encoder.o: C:\Keil\ARM\CMSIS\Include\core_cm4.h
+.\obj\encoder.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\encoder.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\encoder.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\encoder.o: C:\Keil\ARM\CMSIS\Include\core_cm4_simd.h
+.\obj\encoder.o: C:\Keil\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
+.\obj\encoder.o: .\inc\stm32f4xx_conf.h
+.\obj\encoder.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
+.\obj\encoder.o: C:\Keil\ARM\Inc\ST\STM32F4xx\stm32f4xx.h
+.\obj\encoder.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h
+.\obj\encoder.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h
+.\obj\encoder.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h

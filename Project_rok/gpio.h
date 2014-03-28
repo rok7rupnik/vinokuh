@@ -14,8 +14,6 @@ void gpioInit(uint16_t GPIO_Pins,						\
 #define DECODER_PIN_A 
 #define DECODER_PIN_B
 
-void encoderInit(void);
-
 // ************** LED ******************
 
 #define LED0 GPIO_Pin_12

@@ -127,8 +127,6 @@ void lcdDriver(){
 		return;
 	}
 	
-	
-
 	switch(LCD_CTRL_REG){
 		case PRINTSTR:{
 			clrscr();
@@ -246,17 +244,41 @@ void IntToStr(char *str, int INT, char dol)
 	//Ce je dolzina izpisa dolocena na nic, se bo nastavila sama
 	int i, d;
 	if(dol) d = dol;
-	else if(INT <10) d = 1;
-	else if(INT < 100) d = 2;
-	else if(INT < 1000) d = 3;
-	else if(INT < 10000) d = 4;
-	else d = 5;
+	else
+	{
+		d = 10;
+		i = 1;
+		
+		if(INT > 10e8)
+		{
+			str[0] = 'e';
+			str[1] = 'r';
+			str[2] = 'r';
+			str[3] = 0;
+			return;
+		}
+		
+		while(1)
+		{
+			if(!(INT < d))
+			{
+				i++;
+				d *= 10;
+			}
+			else
+			{
+				d = i;
+				break;
+			}
+		}
+	}
 	
 	str[d] = 0;
 	
 	for(i=0; i < d; i++)
 	{
 		str[d-i-1] = (INT % 10) + '0';
+		//str[d-i-1] = 1 + '0';
 		INT /= 10;
 	}
 

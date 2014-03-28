@@ -8,7 +8,7 @@
 #define E1_Clk  RCC_AHB1Periph_GPIOB
 #define E2_Pin  GPIO_Pin_6
 #define E2_Port GPIOE
-#define E2_Clk  RCC_AHB1Periph_GPIOB
+#define E2_Clk  RCC_AHB1Periph_GPIOE
 
 extern void delay_ms(uint32_t time);
 extern void delay_us(uint32_t time);
